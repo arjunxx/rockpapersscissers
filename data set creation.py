@@ -17,6 +17,7 @@ count = 0
 roi = 0
 #starts loop to run video
 while True :
+    #starts camera, flips camera, adjusts color, etc. 
     ret,video = camera.read()
     video = cv2.flip(video,1)
     #changing video to black and white
